@@ -5,24 +5,136 @@
   box-sizing:border-box;
 }
 
+
 /* 본문 스타일 */
 body{font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
 
 /* 레이아웃 */
-.header, .visual, .main, .shortcut, .footer_inner{
+.main, .shortcut, .footer_inner{
   width: 1300px;
   margin:0 auto;
 }
 /* 헤더 */
 .header{
-  background:skyblue;
-  height:15vh;
+  width: 100%;
+  background:#fff;
+  text-align: center;
+  margin:0 auto;
+  
 }
+.header .header_wrap{
+  width: 100%;
+  border-top:1px solid silver;
+  border-bottom:1px solid silver;
+}
+.header .header_logo{
+  margin:0 auto;
+  width: 1300px;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.header .header_logo .logo{
+  display:inline-block;
+}
+
+.header .header_logo .lang{
+  display:inline-block;
+  position:absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.header .header_logo .lang p{
+  font-size: 1rem;
+  margin-right:20px;
+}
+.header .nav_menu {
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.header .nav_menu ul{
+  width: 1300px;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.header .nav_menu ul li{
+  padding:30px 0px;
+}
+
+.header .nav_menu ul li a{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.header .nav_menu ul li a:hover{
+  color:rgba(21,88,167);
+  transition:0.5s all;
+  font-weight: 600;
+}
+
+
 /* 비주얼 */
 .visual{
-  background:lightgreen;
-  height:10vh;
+  width: 100%;
+  background-image:url(img/visualBg.gif);
+  background-size:contain;
+  background-repeat: no-repeat;
+
 }
+
+.visual .visual_top .visual_text{
+  text-align: center;
+  font-size: 3rem;
+  color:#fff;
+  font-weight: 700;
+  padding:100px 0px;
+}
+
+.visual .visual_top .top{
+  font-size: 1rem;
+  color:#fff;
+  font-weight: 600;
+}
+
+.visual .visual_bottom{
+  width: 100%;
+  background-color:rgb(97, 109, 125);
+}
+
+.visual .visual_bottom .h_list{
+  width: 1300px;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+
+.visual .visual_bottom .h_list li{
+  width: 100%;
+  text-align: center;
+  margin:0 auto;
+  border-left:1px solid black;
+  padding:30px 0px;
+}
+
+.visual .visual_bottom .h_list li:last-child{
+  border-right:1px solid black;
+}
+
+.visual .visual_bottom .h_list li a{
+  color:#fff;
+
+}
+
+
 /* 메인 */
 .main{
   background:lightpink;
