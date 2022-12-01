@@ -1,0 +1,45 @@
+@import url(reset.css);
+
+/* 기본 스타일 */
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+/* 본문 스타일 */
+body{font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
+
+/* 레이아웃 */
+.header, .visual, .main, .shortcut, .footer_inner{
+  width: 1300px;
+  margin:0 auto;
+}
+/* 헤더 */
+.header{
+  background:skyblue;
+  height:15vh;
+}
+/* 비주얼 */
+.visual{
+  background:lightgreen;
+  height:10vh;
+}
+/* 메인 */
+.main{
+  background:lightpink;
+  height:50vh;
+}
+/* 병원리스트 */
+.shortcut{
+  background:lightseagreen;
+  height:15vh;
+}
+/* 푸터 */
+.footer{
+  background:gray;
+  
+}
+
+.footer_inner{
+  background:silver;
+  height:10vh;
+}
